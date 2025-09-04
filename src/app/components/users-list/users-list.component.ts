@@ -8,11 +8,11 @@ import { usersList } from '../../../data/users-list';
   styleUrl: './users-list.component.scss'
 })
 export class UsersListComponent {
-  // usersList: IUser[] = usersList
-  // displayedColumns: string[] = ['name', 'date', 'status'];
-  // @Output() userClickedEmitter = new EventEmitter<IUser>();
+  usersList: IUser[] = usersList
+  displayedColumns: string[] = ['name', 'date', 'status'];
+  @Output() userClickedEmitter = new EventEmitter<IUser>();
 
-  // onUserSelected(user: IUser){
-  //   this.userClickedEmitter.emit(user)
-  // }
+  onUserSelected(user: IUser){
+    this.userClickedEmitter.emit(user)
+  }
 }

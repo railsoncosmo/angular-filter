@@ -19,7 +19,7 @@ describe('AppComponent', () => {
   it(`should have as title 'users-filter'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('users-filter');
+    expect(app).toEqual('users-filter');
   });
 
   it('should render title', () => {
