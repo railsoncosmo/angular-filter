@@ -1,15 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import 'moment/locale/pt-br';
+import { IFilterOptions } from '../../../interfaces/filter-options.interface';
 
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
-  styleUrl: './filter.component.scss'
+  styleUrl: './filter.component.scss',
 })
 export class FilterComponent {
-  foods = [
-    {
-      value: 'Teste 1',
-      viewValue: 'TesteViewValue 1'
-    },
+  @Output('onFilter') onFilterEmitt = new EventEmitter<IFilterOptions>()
+
+  filterOptions: IFilterOptions = {
+    name: undefined,
+    startDate: undefined,
+    endDate: undefined,
+    status: undefined,
+  }
+
+  statusList = [
+    { description: 'Ativo', value: true },
+    { description: 'Inativo', value: false },
   ]
+
+  onFilter() {
+    this.onFilterEmitt.emit(this.filterOptions)
+  }
 }

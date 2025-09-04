@@ -7,7 +7,7 @@ import { IAddress } from '../../interfaces/user/address.interface';
 export class AddressPipe implements PipeTransform {
 
   transform(address: IAddress): string {
-    const invalidAddress = !address || !address.rua 
+    const invalidAddress = !address || !address.rua
     || !address.cidade || !address.estado || !address.pais
     || address.numero === null || address.numero === undefined || address.numero === ''
 

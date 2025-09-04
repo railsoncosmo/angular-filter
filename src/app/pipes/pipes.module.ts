@@ -2,19 +2,20 @@ import { NgModule } from "@angular/core";
 import { PhonePipe } from './phone.pipe';
 import { AddressPipe } from './address.pipe';
 import { StatusPipe } from './status.pipe';
-import { DatePipe } from './date.pipe';
+import { EmptyValuePipe } from './empty-value.pipe';
 
 @NgModule({
   declarations: [
     PhonePipe,
     AddressPipe,
     StatusPipe,
-    DatePipe
+    EmptyValuePipe,
   ],
   exports: [
     PhonePipe,
     AddressPipe,
-    StatusPipe
+    StatusPipe,
+    EmptyValuePipe
   ],
 })
 export class PipesModule {
