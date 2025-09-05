@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IUser } from '../../../interfaces/user/users.interface';
 
 @Component({
@@ -8,8 +8,9 @@ import { IUser } from '../../../interfaces/user/users.interface';
 })
 export class UserDetailsComponent {
   @Input({ required: true }) user: IUser = {} as IUser
+  @Output('hideDetails') hideDetailsEmitt = new EventEmitter<boolean>()
 
   onClick() {
-    console.log(this.user)
+    this.hideDetailsEmitt.emit()
   }
 }

@@ -16,7 +16,7 @@ export const usersList: IUser[] = [
     "telefone": "11977778888",
     "ativo": true,
     "funcao": "Especialista em Cloud Computing",
-    "dataCadastro": "1716503800000",
+    "dataCadastro": "2024-05-23T22:36:40.000Z",
     "status": {
       "online": true,
       "verificado": true,
@@ -39,7 +39,7 @@ export const usersList: IUser[] = [
     "telefone": "21988887777",
     "ativo": true,
     "funcao": "Gerente de Marketing",
-    "dataCadastro": "1698885600000",
+    "dataCadastro": "2023-11-02T00:40:00.000Z",
     "status": {
       "online": false,
       "verificado": true,
@@ -62,7 +62,7 @@ export const usersList: IUser[] = [
     "telefone": "11966665555",
     "ativo": false,
     "funcao": "Especialista em Dados",
-    "dataCadastro": "1655073600000",
+    "dataCadastro": "2022-06-12T22:40:00.000Z",
     "status": {
       "online": false,
       "verificado": false,
@@ -85,7 +85,7 @@ export const usersList: IUser[] = [
     "telefone": "31911112222",
     "ativo": true,
     "funcao": "Engenheiro de Software",
-    "dataCadastro": "1718222400000",
+    "dataCadastro": "2024-06-12T20:00:00.000Z",
     "status": {
       "online": true,
       "verificado": true,
@@ -108,7 +108,7 @@ export const usersList: IUser[] = [
     "telefone": "51922221111",
     "ativo": false,
     "funcao": "Gerente de Produto",
-    "dataCadastro": "1669860000000",
+    "dataCadastro": "2022-12-01T02:00:00.000Z",
     "status": {
       "online": true,
       "verificado": true,
