@@ -9,6 +9,7 @@ import { IFilterOptions } from '../../../interfaces/filter-options.interface';
 })
 export class FilterComponent {
   @Output('onFilter') onFilterEmitt = new EventEmitter<IFilterOptions>()
+  @Output('onClear') onClearEmitt = new EventEmitter<IFilterOptions>()
 
   filterOptions: IFilterOptions = {
     name: undefined,
@@ -24,5 +25,15 @@ export class FilterComponent {
 
   onFilter() {
     this.onFilterEmitt.emit(this.filterOptions)
+  }
+
+  onClear() {
+    this.filterOptions = {
+    name: undefined,
+    startDate: undefined,
+    endDate: undefined,
+    status: undefined,
+  }
+  this.onClearEmitt.emit(this.filterOptions)
   }
 }

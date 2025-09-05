@@ -8,4 +8,8 @@ import { IUser } from '../../../interfaces/user/users.interface';
 })
 export class UserDetailsComponent {
   @Input({ required: true }) user: IUser = {} as IUser
+
+  onClick() {
+    console.log(this.user)
+  }
 }

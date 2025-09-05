@@ -106,7 +106,7 @@ export const usersList: IUser[] = [
       "pais": "Brasil"
     },
     "telefone": "51922221111",
-    "ativo": true,
+    "ativo": false,
     "funcao": "Gerente de Produto",
     "dataCadastro": "1669860000000",
     "status": {
