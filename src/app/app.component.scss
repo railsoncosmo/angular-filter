@@ -1,6 +1,7 @@
 .container {
   display: flex;
   height: 100vh;
+  background-color: #5B6961;
 }
 
 .left-container {
@@ -23,4 +24,5 @@
 .right-div {
   width: 30%;
   max-height: 100vh;
+  margin: 20px;
 }
